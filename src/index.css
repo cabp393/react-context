@@ -4,4 +4,37 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
+  background-color: #393939;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 80%;
+}
+
+.App {
+  width: 500px;
+  height: auto;
+  border: #fff solid 1px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+p,
+button {
+  margin-left: 3rem;
+}
+
+.compA,
+.compB,
+.compC,
+.compD {
+  width: auto;
+  border: red solid 1px;
+  margin-bottom: 1rem;
+}
+
+.compE {
+  border: blue solid 1px;
+  margin: 5px;
+  margin-left: 3rem;
 }
