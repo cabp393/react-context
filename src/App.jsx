@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <ComponentA />
-      <ComponentB />
       <ComponentC />
+      <ComponentB />
       <ComponentD />
     </div>
   )

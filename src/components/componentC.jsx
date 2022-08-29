@@ -1,11 +1,12 @@
 import { useDataContext } from '../context/dataContext'
+import { CompBase } from './compBase'
 
 export function ComponentC() {
-  const { setContextData } = useDataContext()
+  const { contextData, setContextData } = useDataContext()
   return (
-    <div className="compC">
-      <h1> {'< Componente C />'}</h1>
-      <button onClick={() => setContextData(prev => prev - 1)}>-</button>
-    </div>
+    <CompBase title="C" type="comp">
+      <button onClick={() => setContextData(prev => prev - 1)}>Reducir</button>
+      <h2> Data: {contextData}</h2>
+    </CompBase>
   )
 }

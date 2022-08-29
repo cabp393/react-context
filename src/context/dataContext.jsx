@@ -8,8 +8,7 @@ export function DataContextProvider(props) {
 
   return (
     <DataContext.Provider value={value}>
-      <h3>Data Provider</h3>
-      <p>Real data: {contextData}</p>
+      <h1>Context & Render (Data: {contextData})</h1>
       {props.children}
     </DataContext.Provider>
   )

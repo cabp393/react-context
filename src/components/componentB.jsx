@@ -1,14 +1,9 @@
-import { useDataContext } from '../context/dataContext'
-
-useDataContext
+import { CompBase } from './compBase'
 
 export function ComponentB() {
-  const { contextData } = useDataContext()
-
   return (
-    <div className="compB">
-      <h1> {'< Componente B />'}</h1>
-      <p>Data: {contextData}</p>
-    </div>
+    <CompBase title="B" type="comp">
+      <h2>texto plano</h2>
+    </CompBase>
   )
 }

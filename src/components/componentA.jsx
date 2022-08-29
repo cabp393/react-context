@@ -1,7 +1,13 @@
+import { CompBase } from './compBase'
+import { ComponentF } from './componentF'
+import { ComponentG } from './componentG'
+
 export function ComponentA() {
   return (
-    <div className="compA">
-      <h1> {'< Componente A />'}</h1>
-    </div>
+    <CompBase title="A" type="comp">
+      <h2>hola</h2>
+      <ComponentF />
+      <ComponentG />
+    </CompBase>
   )
 }

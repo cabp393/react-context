@@ -12,29 +12,66 @@ body {
 }
 
 .App {
-  width: 500px;
   height: auto;
-  border: #fff solid 1px;
+  border: #fff solid 2px;
   padding: 1rem;
+  border-radius: 10px;
   margin-top: 3rem;
 }
 
-p,
+h2 {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+h3 {
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 0.5rem;
+  width: 40px;
+  height: 15px;
+  border-radius: 10px;
+}
+
 button {
-  margin-left: 3rem;
+  height: 19px;
 }
-
-.compA,
-.compB,
-.compC,
-.compD {
+.comp {
   width: auto;
-  border: red solid 1px;
+  background-color: rgb(107, 50, 50);
   margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
-.compE {
-  border: blue solid 1px;
+.subComp {
+  background-color: rgb(56, 56, 131);
+  padding: 10px;
   margin: 5px;
   margin-left: 3rem;
+  border-radius: 10px;
+}
+
+.compContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.data {
+  animation: rerender 1s linear forwards;
+}
+
+@keyframes rerender {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-8px);
+  }
 }
